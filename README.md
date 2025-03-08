@@ -1,5 +1,7 @@
 # wc-graf-prom
 
+NOTE: Hosted on Gitea, mirrored to GitHub
+
 ## Components
 
 1. Grafana
