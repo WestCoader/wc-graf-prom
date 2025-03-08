@@ -1,0 +1,36 @@
+  container_definitions = [
+    {
+      "name": "node-exporter",
+      "image": "prom/node-exporter:latest",
+      "memory": 128,
+      "portMappings": [
+        {
+          "containerPort": 9100,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    {
+        "name": "prometheus",
+        "image": "prom/prometheus:latest",
+        "memory": 128,
+        "portMappings": [
+          {
+            "containerPort": 9090,
+            "protocol": "tcp"
+          }
+        ]
+      },
+      {
+        "name": "grafana",
+        "image": "grafana/grafana:latest",
+        "memory": 128,
+        "portMappings": [
+          {
+            "containerPort": 3000,
+            "protocol": "tcp"
+          }
+        ]
+      }
+    ]
+
