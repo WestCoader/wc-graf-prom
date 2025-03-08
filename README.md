@@ -8,7 +8,8 @@
 
 ## Data Source Config:
 
-Prometheus Data Source for local: http://host.docker.internal:9090
+Prometheus Data Source for local: http://host.docker.internal:9090 (Add the grafana service to the "monitoring" network if you don't want to have to do this)
+
 
 ## Run (Detached):
 docker-compose up -d

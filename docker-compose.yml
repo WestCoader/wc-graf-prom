@@ -50,3 +50,5 @@ services:
     restart: unless-stopped
     ports:
      - "3000:3000"
+    networks:
+      - monitoring # Same network for now, see README, usually intentionally leave separate
